@@ -23,6 +23,10 @@ const ListScreen = () => {
 
             }
             />
+            <button
+            title="go Back"
+            onProgress={() => PaymentResponse.navigation.goBack()}
+            />
         </View>
     )
 }
