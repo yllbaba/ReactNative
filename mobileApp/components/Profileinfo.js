@@ -45,23 +45,9 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 20,
-        backgroundColor: '#f5f5f5',
+        backgroundColor: "#ff0404"
     },
-    profileHeader: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        marginBottom: 20,
-    },
-    profileImg: {
-        width: 100,
-        height: 100,
-        borderRadius: 50,
-        marginRight: 20,
-    },
-    headerInfo: {
-        flex: 1,
-    },
-    fullName: {
+    textStyle: {
         fontSize: 24,
         fontWeight: 'bold',
         marginBottom: 5,
@@ -75,7 +61,7 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         lineHeight: 24,
     },
-    sectionTitle: {
+    studentWrapper: {
         fontSize: 20,
         fontWeight: 'bold',
         marginBottom: 10,
