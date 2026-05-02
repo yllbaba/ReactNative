@@ -1,91 +1,84 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, FlatList } from 'react-native';
+import { View, Text,Image,TouchableOpacity,StyleSheet } from 'react-native';
 
-const ProfileInfo = (props) => {
-    const { fullName, position, description, profileImg, projects, images } = props;
+const ProfileInfo = ({ name, position, description, profileImage }) => {
+  return (
+    <View style={styles.container}>
+      <View style={styles.heroSection}>
+        <Image source={profileImage} style={styles.profileImage} />
+      </View>
 
-    return (
-        <View style={styles.container}>
-            <View style={styles.profileHeader}>
-                <Image source={profileImg} style={styles.profileImg} />
-                <View style={styles.headerInfo}>
-                    <Text style={styles.fullName}>{fullName}</Text>
-                    <Text style={styles.position}>{position}</Text>
-                </View>
-            </View>
-            <Text style={styles.description}>{description}</Text>
-            <Text style={styles.sectionTitle}>Projects:</Text>
-            <FlatList
-                data={projects}
-                keyExtractor={(item, index) => index.toString()}
-                renderItem={({ item }) => (
-                    <View style={styles.projectItem}>
-                        <Image source={item.img} style={styles.projectImg} />
-                        <Text style={styles.projectName}>{item.name}</Text>
-                    </View>
-                )}
-                horizontal
-                showsHorizontalScrollIndicator={false}
-            />
-            <Text style={styles.sectionTitle}>Images:</Text>
-            <FlatList
-                data={images}
-                keyExtractor={(item, index) => index.toString()}
-                renderItem={({ item }) => (
-                    <Image source={item} style={styles.imageItem} />
-                )}
-                horizontal
-                showsHorizontalScrollIndicator={false}
-            />
-        </View>
-    );
+      <View style={styles.cardContent}>
+        <Text style={styles.fullName}>{name}</Text>
+        <Text style={styles.position}>{position}</Text>
+        <Text style={styles.description}>{description}</Text>
+        <TouchableOpacity style={styles.hireButton}>
+          <Text style={styles.hireButton}>HIRE ME</Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  );
 };
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        padding: 20,
-        backgroundColor: "#ff0404"
-    },
-    textStyle: {
-        fontSize: 24,
-        fontWeight: 'bold',
-        marginBottom: 5,
-    },
-    position: {
-        fontSize: 18,
-        color: '#666',
-    },
-    description: {
-        fontSize: 16,
-        marginBottom: 20,
-        lineHeight: 24,
-    },
-    studentWrapper: {
-        fontSize: 20,
-        fontWeight: 'bold',
-        marginBottom: 10,
-    },
-    projectItem: {
-        alignItems: 'center',
-        marginRight: 15,
-    },
-    projectImg: {
-        width: 80,
-        height: 80,
-        borderRadius: 10,
-        marginBottom: 5,
-    },
-    projectName: {
-        fontSize: 14,
-        textAlign: 'center',
-    },
-    imageItem: {
-        width: 80,
-        height: 80,
-        borderRadius: 10,
-        marginRight: 10,
-    },
-});
-
+     const styles = StyleSheet.create({
+  container: {
+    marginBottom: 18,
+  },
+  heroSection: {
+    height: 355,
+    borderBottomLeftRadius: 36,
+    borderBottomRightRadius: 36,
+    backgroundColor: '#6CC5E6',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    overflow: 'hidden',
+  },
+  profileImage: {
+    width: '78%',
+    height: '78%',
+    resizeMode: 'contain'
+  },
+  cardContent: {
+  marginTop: -48,
+  marginHorizontal: 24,
+  borderRadius: 24,
+  backgroundColor: '#f3f3f3',
+  paddingHorizontal: 24,
+  paddingVertical: 24,
+  alignItems: 'center',
+  shadowColor: '#000',
+  shadowOffset: { width: 0, height: 2 },
+  shadowOpacity: 0.08,
+  shadowRadius: 6,
+  elevation: 4,
+},
+fullname: {
+  fontSize: 42,
+  fontWeight: 'bold',
+  color: '#101010',
+  marginBottom: 10,
+},
+position: {
+  fontSize: 20,
+  color: '#4F4F4F',
+  marginBottom: 10,
+},
+description: {
+  fontSize: 17,
+  color: '#2D2D2D',
+  marginBottom: 16,
+  lineHeight: 25,
+  textAlign: 'center',
+},
+hireButton: {
+  backgroundColor: '#FFD400',
+  paddingVertical: 14,
+  paddingHorizontal: 28,
+  borderRadius: 28,
+},
+hireButtonTxt: {
+  color: '#fff',
+  fontWeight: 'bold',
+  fontSize: 23
+}
+})
 export default ProfileInfo;
