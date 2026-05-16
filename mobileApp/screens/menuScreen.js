@@ -1,105 +1,47 @@
-import React from 'react';
-import { View, Text, Image, StyleSheet, FlatList } from 'react-native';
+import React from "react";
+import {View, Text, StyleSheet, Button, TouchableOpacity} from 'react-native';
 
-const ProfileInfo = (props) => {
-    const { fullName, position, description, profileImg, projects, images } = props;
-
+const MenuScreen = (props) => {
     return (
-        <View style={styles.container}>
-            <View style={styles.profileHeader}>
-                <Image source={profileImg} style={styles.profileImg} />
-                <View style={styles.headerInfo}>
-                    <Text style={styles.fullName}>{fullName}</Text>
-                    <Text style={styles.position}>{position}</Text>
-                </View>
-            </View>
-            <Text style={styles.description}>{description}</Text>
-            <Text style={styles.sectionTitle}>Projects:</Text>
-            <FlatList
-                data={projects}
-                keyExtractor={(item, index) => index.toString()}
-                renderItem={({ item }) => (
-                    <View style={styles.projectItem}>
-                        <Image source={item.img} style={styles.projectImg} />
-                        <Text style={styles.projectName}>{item.name}</Text>
-                    </View>
-                )}
-                horizontal
-                showsHorizontalScrollIndicator={false}
+        <View>
+            <Text style={styles.text}>Welcom To Menu Screen</Text>
+            <Button 
+                title="Go to List Screen"
+                onPress={()=> props.navigation.navigate('List')}
             />
-            <Text style={styles.sectionTitle}>Images:</Text>
-            <FlatList
-                data={images}
-                keyExtractor={(item, index) => index.toString()}
-                renderItem={({ item }) => (
-                    <Image source={item} style={styles.imageItem} />
-                )}
-                horizontal
-                showsHorizontalScrollIndicator={false}
-            />
+            <TouchableOpacity
+                style = {styles.btn}
+                onPress={() => props.navigation.navigate('Students')}>
+                <Text style={styles.btnText}>Go to Students Screen</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+                style = {styles.btn}
+                onPress={() => props.navigation.navigate('Profile')}>
+                <Text style={styles.btnText}>Go to Profile Screen</Text>
+            </TouchableOpacity>
         </View>
     );
+
 };
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        padding: 20,
-        backgroundColor: '#f5f5f5',
-    },
-    profileHeader: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        marginBottom: 20,
-    },
-    profileImg: {
-        width: 100,
-        height: 100,
-        borderRadius: 50,
-        marginRight: 20,
-    },
-    headerInfo: {
-        flex: 1,
-    },
-    fullName: {
-        fontSize: 24,
-        fontWeight: 'bold',
-        marginBottom: 5,
-    },
-    position: {
-        fontSize: 18,
-        color: '#666',
-    },
-    description: {
-        fontSize: 16,
-        marginBottom: 20,
-        lineHeight: 24,
-    },
-    sectionTitle: {
-        fontSize: 20,
-        fontWeight: 'bold',
-        marginBottom: 10,
-    },
-    projectItem: {
-        alignItems: 'center',
-        marginRight: 15,
-    },
-    projectImg: {
-        width: 80,
-        height: 80,
-        borderRadius: 10,
-        marginBottom: 5,
-    },
-    projectName: {
-        fontSize: 14,
+    text: {
         textAlign: 'center',
+        fontSize: 20,
+        marginVertical: 20
     },
-    imageItem: {
-        width: 80,
-        height: 80,
-        borderRadius: 10,
-        marginRight: 10,
+    btn: {
+        backgroundColor: '#3346eb',
+        marginVertical: 10,
+        paddingVertical: 7
     },
+    btnText: {
+        color: 'white',
+        fontSize: 15,
+        textTransform: 'uppercase',
+        textAlign: 'center'
+    }
 });
 
-export default ProfileInfo;
+
+export default MenuScreen;

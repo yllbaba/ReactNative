@@ -1,7 +1,6 @@
 import React from "react";
 import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
-import StudentDetails from "../components/StudentDetails";
-
+import StudentDetails from '../components/StudentDetail';
 const StudentsScreen = () => {
     return (
         <View>
