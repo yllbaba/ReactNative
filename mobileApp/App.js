@@ -6,10 +6,11 @@ import MainScreen from './screens/MainScreen';
 import ExerciseScreen from './screens/ExerciseScreen';
 import ListScreen from './screens/ListScreen';
 import ButtonScreen from './screens/ButtonScreen';
-import MenuScreen from './screens/menuScreen';
+import MenuScreen from './screens/MenuScreen';
 import StudentsScreen from './screens/StudentsScreen';
 import ProjectScreen from './screens/ProjectScreen';
 import PostScreen from './screens/PostScreen';
+import CountriesScreen from './screens/CountriesScreen';
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
         <Stack.Screen name='Students' component={StudentsScreen} />
         <Stack.Screen name='Project' component={ProjectScreen} />
         <Stack.Screen name='Posts' component={PostScreen} />
+        <Stack.Screen name='Countries' component={CountriesScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
