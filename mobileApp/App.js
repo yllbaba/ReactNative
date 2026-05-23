@@ -11,6 +11,7 @@ import StudentsScreen from './screens/StudentsScreen';
 import ProjectScreen from './screens/ProjectScreen';
 import PostScreen from './screens/PostScreen';
 import CountriesScreen from './screens/CountriesScreen';
+import ProfileScreen from './screens/ProfileScreen';
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -31,6 +32,7 @@ export default function App() {
         <Stack.Screen name='Project' component={ProjectScreen} />
         <Stack.Screen name='Posts' component={PostScreen} />
         <Stack.Screen name='Countries' component={CountriesScreen} />
+        <Stack.Screen name='Profile' component={ProfileScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
