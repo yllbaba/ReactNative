@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "emri": "Ardit",
+    "mbiemri": "Krasniqi",
+    "mosha": 24,
+    "email": "ardit.krasniqi@example.com",
+    "telefoni": "+38344111222",
+    "qyteti": "Prishtinë",
+    "profesioni": "Programer"
+  },
+  {
+    "id": 2,
+    "emri": "Elira",
+    "mbiemri": "Berisha",
+    "mosha": 22,
+    "email": "elira.berisha@example.com",
+    "telefoni": "+38344111223",
+    "qyteti": "Prizren",
+    "profesioni": "Dizajnere"
+  },
+  {
+    "id": 3,
+    "emri": "Besnik",
+    "mbiemri": "Gashi",
+    "mosha": 29,
+    "email": "besnik.gashi@example.com",
+    "telefoni": "+38344111224",
+    "qyteti": "Pejë",
+    "profesioni": "Inxhinier"
+  },
+  {
+    "id": 4,
+    "emri": "Arta",
+    "mbiemri": "Hoxha",
+    "mosha": 26,
+    "email": "arta.hoxha@example.com",
+    "telefoni": "+38344111225",
+    "qyteti": "Gjilan",
+    "profesioni": "Mësuese"
+  },
+  {
+    "id": 5,
+    "emri": "Luan",
+    "mbiemri": "Shala",
+    "mosha": 31,
+    "email": "luan.shala@example.com",
+    "telefoni": "+38344111226",
+    "qyteti": "Ferizaj",
+    "profesioni": "Menaxher"
+  },
+  {
+    "id": 6,
+    "emri": "Diona",
+    "mbiemri": "Morina",
+    "mosha": 23,
+    "email": "diona.morina@example.com",
+    "telefoni": "+38344111227",
+    "qyteti": "Prishtinë",
+    "profesioni": "Marketing"
+  },
+  {
+    "id": 7,
+    "emri": "Alban",
+    "mbiemri": "Rexhepi",
+    "mosha": 28,
+    "email": "alban.rexhepi@example.com",
+    "telefoni": "+38344111228",
+    "qyteti": "Gjakovë",
+    "profesioni": "Kontabilist"
+  },
+  {
+    "id": 8,
+    "emri": "Era",
+    "mbiemri": "Bytyqi",
+    "mosha": 21,
+    "email": "era.bytyqi@example.com",
+    "telefoni": "+38344111229",
+    "qyteti": "Prizren",
+    "profesioni": "Studente"
+  },
+  {
+    "id": 9,
+    "emri": "Drin",
+    "mbiemri": "Kelmendi",
+    "mosha": 35,
+    "email": "drin.kelmendi@example.com",
+    "telefoni": "+38344111230",
+    "qyteti": "Pejë",
+    "profesioni": "Mjek"
+  },
+  {
+    "id": 10,
+    "emri": "Sara",
+    "mbiemri": "Mehmeti",
+    "mosha": 27,
+    "email": "sara.mehmeti@example.com",
+    "telefoni": "+38344111231",
+    "qyteti": "Prishtinë",
+    "profesioni": "Juriste"
+  },
+  {
+    "id": 11,
+    "emri": "Valon",
+    "mbiemri": "Zeka",
+    "mosha": 30,
+    "email": "valon.zeka@example.com",
+    "telefoni": "+38344111232",
+    "qyteti": "Mitrovicë",
+    "profesioni": "Arkitekt"
+  },
+  {
+    "id": 12,
+    "emri": "Anisa",
+    "mbiemri": "Ismaili",
+    "mosha": 25,
+    "email": "anisa.ismaili@example.com",
+    "telefoni": "+38344111233",
+    "qyteti": "Gjilan",
+    "profesioni": "Gazetare"
+  },
+  {
+    "id": 13,
+    "emri": "Endrit",
+    "mbiemri": "Lika",
+    "mosha": 32,
+    "email": "endrit.lika@example.com",
+    "telefoni": "+38344111234",
+    "qyteti": "Ferizaj",
+    "profesioni": "Elektricist"
+  },
+  {
+    "id": 14,
+    "emri": "Lea",
+    "mbiemri": "Selimi",
+    "mosha": 20,
+    "email": "lea.selimi@example.com",
+    "telefoni": "+38344111235",
+    "qyteti": "Prishtinë",
+    "profesioni": "Studente"
+  },
+  {
+    "id": 15,
+    "emri": "Blerim",
+    "mbiemri": "Tahiri",
+    "mosha": 37,
+    "email": "blerim.tahiri@example.com",
+    "telefoni": "+38344111236",
+    "qyteti": "Gjakovë",
+    "profesioni": "Biznesmen"
+  },
+  {
+    "id": 16,
+    "emri": "Nora",
+    "mbiemri": "Osmani",
+    "mosha": 28,
+    "email": "nora.osmani@example.com",
+    "telefoni": "+38344111237",
+    "qyteti": "Prizren",
+    "profesioni": "Fotografe"
+  },
+  {
+    "id": 17,
+    "emri": "Krenar",
+    "mbiemri": "Bajrami",
+    "mosha": 26,
+    "email": "krenar.bajrami@example.com",
+    "telefoni": "+38344111238",
+    "qyteti": "Mitrovicë",
+    "profesioni": "Programer"
+  },
+  {
+    "id": 18,
+    "emri": "Rina",
+    "mbiemri": "Koci",
+    "mosha": 24,
+    "email": "rina.koci@example.com",
+    "telefoni": "+38344111239",
+    "qyteti": "Prishtinë",
+    "profesioni": "Ekonomiste"
+  },
+  {
+    "id": 19,
+    "emri": "Gent",
+    "mbiemri": "Ahmeti",
+    "mosha": 33,
+    "email": "gent.ahmeti@example.com",
+    "telefoni": "+38344111240",
+    "qyteti": "Pejë",
+    "profesioni": "Inxhinier"
+  },
+  {
+    "id": 20,
+    "emri": "Blerta",
+    "mbiemri": "Dervishi",
+    "mosha": 29,
+    "email": "blerta.dervishi@example.com",
+    "telefoni": "+38344111241",
+    "qyteti": "Gjilan",
+    "profesioni": "Infermiere"
+  }
+]
