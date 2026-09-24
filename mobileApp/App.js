@@ -1,48 +1,66 @@
+// import { StatusBar } from 'expo-status-bar';
+// import { StyleSheet, Text, View } from 'react-native';
+// import { NavigationContainer } from '@react-navigation/native';
+// import { createStackNavigator } from '@react-navigation/stack';
+// import MainScreen from './screens/MainScreen';
+// import ExerciseScreen from './screens/ExerciseScreen';
+// import ListScreen from './screens/ListScreen';
+// import ButtonScreen from './screens/ButtonScreen';
+// import MenuScreen from './screens/MenuScreen';
+// import StudentsScreen from './screens/StudentsScreen';
+// import ProjectScreen from './screens/ProjectScreen';
+// import PostScreen from './screens/PostScreen';
+// import CountriesScreen from './screens/CountriesScreen';
+// import ProfileScreen from './screens/ProfileScreen';
+// const Stack = createStackNavigator();
+
+// export default function App() {
+//   return (
+//     <NavigationContainer>
+//       <Stack.Navigator
+//         initialRouteName='Menu'
+//         screenOptions={{
+//           headerTitle: 'APP',
+//         }}
+//       >
+//         <Stack.Screen name = "Button" component={ButtonScreen} />
+//         <Stack.Screen name = "Exercise" component={ExerciseScreen} />
+//         <Stack.Screen name="Main" component={MainScreen} />
+//         <Stack.Screen name='List' component={ListScreen} />
+//         <Stack.Screen name='Menu' component={MenuScreen} />
+//         <Stack.Screen name='Students' component={StudentsScreen} />
+//         <Stack.Screen name='Project' component={ProjectScreen} />
+//         <Stack.Screen name='Posts' component={PostScreen} />
+//         <Stack.Screen name='Countries' component={CountriesScreen} />
+//         <Stack.Screen name='Profile' component={ProfileScreen} />
+//       </Stack.Navigator>
+//     </NavigationContainer>
+//   );
+// }
+
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
+// });
+
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import MainScreen from './screens/MainScreen';
-import ExerciseScreen from './screens/ExerciseScreen';
-import ListScreen from './screens/ListScreen';
-import ButtonScreen from './screens/ButtonScreen';
-import MenuScreen from './screens/MenuScreen';
-import StudentsScreen from './screens/StudentsScreen';
-import ProjectScreen from './screens/ProjectScreen';
-import PostScreen from './screens/PostScreen';
-import CountriesScreen from './screens/CountriesScreen';
-import ProfileScreen from './screens/ProfileScreen';
-const Stack = createStackNavigator();
+import StackNavigator from './src/navigation/StackNavigator';
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator
-        initialRouteName='Menu'
-        screenOptions={{
-          headerTitle: 'APP',
-        }}
-      >
-        <Stack.Screen name = "Button" component={ButtonScreen} />
-        <Stack.Screen name = "Exercise" component={ExerciseScreen} />
-        <Stack.Screen name="Main" component={MainScreen} />
-        <Stack.Screen name='List' component={ListScreen} />
-        <Stack.Screen name='Menu' component={MenuScreen} />
-        <Stack.Screen name='Students' component={StudentsScreen} />
-        <Stack.Screen name='Project' component={ProjectScreen} />
-        <Stack.Screen name='Posts' component={PostScreen} />
-        <Stack.Screen name='Countries' component={CountriesScreen} />
-        <Stack.Screen name='Profile' component={ProfileScreen} />
-      </Stack.Navigator>
+      <StatusBar style="auto" />
+      <StackNavigator />
     </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+// You can safely delete or keep the stylesheet if needed later,
+// but removing the wrapping View fixes screen expansion constraints.
+
